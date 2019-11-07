@@ -1,0 +1,18 @@
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Help</button>
+</mat-menu>
+
+<div class="nav-menu-bar">
+  <button [routerLink]="['']" routerLinkActive="active" mat-icon-button>
+    Home
+  </button>
+
+  <button
+    [routerLink]="['/admission']"
+    mat-icon-button
+    [matMenuTriggerFor]="appMenu"
+  >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</div>

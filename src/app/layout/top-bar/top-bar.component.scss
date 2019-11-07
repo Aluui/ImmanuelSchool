@@ -1,0 +1,21 @@
+div.main-top-bar {
+  min-height: 3rem;
+  display: flex;
+
+  > div {
+    padding: 0.8rem 0.5rem;
+  }
+
+  > div.top-bar-brand {
+    flex-grow: 2;
+    text-align: right;
+  }
+
+  > div.top-bar-contact {
+    flex-grow: 4;
+  }
+
+  > div.top-bar-login {
+    flex-grow: 1;
+  }
+}
