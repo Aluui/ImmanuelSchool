@@ -1,0 +1,21 @@
+.nav-menu-bar {
+  text-align: center;
+  padding: 0 10%;
+
+  > a {
+    padding: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:visited {
+      color: initial;
+    }
+
+    &:not(:last-child) {
+      border-right: 2px solid;
+    }
+  }
+}

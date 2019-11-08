@@ -1,18 +1,55 @@
-<mat-menu #appMenu="matMenu">
-  <button mat-menu-item>Settings</button>
-  <button mat-menu-item>Help</button>
+<mat-menu #admissionsMenu="matMenu">
+  <a mat-menu-item>Settings</a>
+  <a mat-menu-item>Help</a>
+</mat-menu>
+
+<mat-menu #discoverMenu="matMenu">
+  <a mat-menu-item>About Immanuel School</a>
+  <a mat-menu-item>Our Facilities</a>
+  <a mat-menu-item>Our C.E.O</a>
+  <a mat-menu-item>Our Team</a>
+  <a mat-menu-item>Meet The Principal</a>
+  <a mat-menu-item>Discipline Policy</a>
+</mat-menu>
+
+<mat-menu #advancedMenu="matMenu">
+  <a mat-menu-item>Undergraduate Foundation Programme</a>
+  <a mat-menu-item>Cambridge A Level</a>
 </mat-menu>
 
 <div class="nav-menu-bar">
-  <button [routerLink]="['']" routerLinkActive="active" mat-icon-button>
+  <a [routerLink]="['']" routerLinkActive="active" mat-icon-button>
     Home
-  </button>
+  </a>
 
-  <button
-    [routerLink]="['/admission']"
-    mat-icon-button
-    [matMenuTriggerFor]="appMenu"
-  >
-    <mat-icon>more_vert</mat-icon>
-  </button>
+  <a mat-icon-button [matMenuTriggerFor]="admissionsMenu">
+    ADMISSIONS
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </a>
+
+  <a mat-icon-button [matMenuTriggerFor]="discoverMenu">
+    DISCOVER
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </a>
+
+  <a [routerLink]="['']" routerLinkActive="active" mat-icon-button>
+    Pre-school
+  </a>
+
+  <a [routerLink]="['']" routerLinkActive="active" mat-icon-button>
+    Junior
+  </a>
+
+  <a [routerLink]="['']" routerLinkActive="active" mat-icon-button>
+    High School
+  </a>
+
+  <a [matMenuTriggerFor]="advancedMenu" mat-icon-button>
+    Advanced Classes
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </a>
+
+  <a [routerLink]="['']" routerLinkActive="active" mat-icon-button>
+    Contact
+  </a>
 </div>
