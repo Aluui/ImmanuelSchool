@@ -1,0 +1,8 @@
+<div class="footer-links-column" *ngIf="model">
+  <h3>{{ model.header }}</h3>
+  <ul>
+    <li *ngFor="let link of model.links">
+      <a [href]="link.url">{{ link.title }}</a>
+    </li>
+  </ul>
+</div>

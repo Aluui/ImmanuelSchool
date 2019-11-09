@@ -1,1 +1,13 @@
+<div class="top-footer">
+  <div class="left-top-footer">
+    <app-footer-links-column
+      *ngFor="let column of footerLinks"
+      [model]="column"
+    ></app-footer-links-column>
+  </div>
+  <div class="right-top-footer">
+    stuff
+  </div>
+</div>
+
 <p>footer works!</p>
