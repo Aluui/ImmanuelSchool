@@ -9,6 +9,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { NavMenuComponent } from './layout/nav-menu/nav-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { FooterLinksColumnComponent } from './layout/footer-links-column/footer-links-column.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SharedModule } from './shared/shared.module';
     SecuredLayoutComponent,
     TopBarComponent,
     FooterComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    FooterLinksColumnComponent
   ],
   imports: [BrowserModule, SharedModule, AppRoutes, BrowserAnimationsModule],
   providers: [],

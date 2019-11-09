@@ -1,0 +1,13 @@
+.top-footer {
+  display: flex;
+
+  > .left-top-footer {
+    display: flex;
+    flex-grow: 4;
+    justify-content: space-evenly;
+  }
+
+  > .right-top-footer {
+    flex-grow: 1;
+  }
+}
