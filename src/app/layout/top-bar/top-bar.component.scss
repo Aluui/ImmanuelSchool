@@ -1,6 +1,7 @@
 div.main-top-bar {
   min-height: 3rem;
   display: flex;
+  padding: 1rem 0.5rem;
 
   > div {
     padding: 0.8rem 0.5rem;
@@ -12,7 +13,29 @@ div.main-top-bar {
   }
 
   > div.top-bar-contact {
-    flex-grow: 4;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+
+    > .contact {
+      display: inline-block;
+      border-right: 1px solid;
+      width: 30%;
+
+      &:first-child {
+        width: 55%;
+      }
+
+      > header {
+        font-size: 0.8rem;
+        font-weight: 100;
+      }
+
+      > span {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
   }
 
   > div.top-bar-login {

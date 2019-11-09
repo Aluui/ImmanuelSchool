@@ -11,3 +11,13 @@
     flex-grow: 1;
   }
 }
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+
+  header {
+    text-transform: uppercase;
+  }
+}
