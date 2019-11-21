@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import {
   MatIconModule,
   MatButtonModule,
   MatInputModule,
   MatMenuModule
-} from '@angular/material';
+} from "@angular/material";
+import { MatCarouselModule } from "@ngmodule/material-carousel";
 
 const matModules = [
   MatMenuModule,
@@ -16,7 +17,7 @@ const matModules = [
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, ...matModules],
-  exports: [...matModules]
+  imports: [CommonModule, ...matModules, MatCarouselModule],
+  exports: [CommonModule, ...matModules, MatCarouselModule]
 })
 export class SharedModule {}
