@@ -12,6 +12,7 @@ import { DisciplinePolicyComponent } from './discipline-policy/discipline-policy
 
 @NgModule({
   declarations: [AboutComponent, OurFacilitiesComponent, OurCeoComponent, OurTeamComponent, MeetThePrincipalComponent, DisciplinePolicyComponent],
+
   imports: [
     CommonModule,
     DiscoverRoutingModule
