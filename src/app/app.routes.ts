@@ -13,8 +13,45 @@ export const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./modules/home/home.module').then(m => m.HomeModule)
-  }
+      import('./modules/home/home.module').then(m => m.HomeModule),
+  },
+  {
+    path: 'admissions',
+    loadChildren: () =>
+      import('./modules/admissions/admissions.module').then(
+        m => m.AdmissionsModule
+      ),
+  },
+  {
+    path: 'advanced',
+    loadChildren: () =>
+      import('./modules/advanced/advanced.module').then(m => m.AdvancedModule),
+  },
+  {
+    path: 'discover',
+    loadChildren: () =>
+      import('./modules/discover/discover.module').then(m => m.DiscoverModule),
+  },
+  {
+    path: 'highschool',
+    loadChildren: () =>
+      import('./modules/highschool/highschool.module').then(
+        m => m.HighschoolModule
+      ),
+  },
+  {
+    path: 'junior',
+    loadChildren: () =>
+      import('./modules/junior/junior.module').then(m => m.JuniorModule),
+  },
+  {
+    path: 'preschool',
+    loadChildren: () =>
+      import('./modules/preschool/preschool.module').then(
+        m => m.PreschoolModule
+      ),
+  },
+
   // {
   //     path: 'admin',
   //     component: SecuredLayoutComponent,
