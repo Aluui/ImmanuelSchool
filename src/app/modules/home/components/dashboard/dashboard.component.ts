@@ -12,8 +12,8 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.slides = [
-      { image: './../../../../../assets/images/landscape.jpeg' },
-      { image: './../../../../../assets/images/landscape2.jpeg' },
+      { image: 'assets/images/landscape.jpeg' },
+      { image: 'assets/images/landscape2.jpeg' },
     ];
   }
 }
