@@ -1,6 +1,8 @@
 <mat-menu #admissionsMenu="matMenu">
-  <a mat-menu-item>Settings</a>
-  <a mat-menu-item>Help</a>
+  <a mat-menu-item [routerLink]="['admissions']">Currently Enrolling</a>
+  <a mat-menu-item [routerLink]="['admissions', 'entrance-exams']"
+    >Entrance Examination</a
+  >
 </mat-menu>
 
 <mat-menu #discoverMenu="matMenu">
@@ -13,8 +15,15 @@
 </mat-menu>
 
 <mat-menu #advancedMenu="matMenu">
-  <a mat-menu-item>Undergraduate Foundation Programme</a>
-  <a mat-menu-item>Cambridge A Level</a>
+  <a mat-menu-item [routerLink]="['/advanced']" routerLinkActive="advanced"
+    >Undergraduate Foundation Programme</a
+  >
+  <a
+    mat-menu-item
+    [routerLink]="['advanced/cambridge-a-level']"
+    routerLinkActive="cambridge-a-level"
+    >Cambridge A Level</a
+  >
 </mat-menu>
 
 <div class="nav-menu-bar">
