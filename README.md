@@ -1,5 +1,8 @@
 # Sample site
-https://aluui.github.io/ImmanuelSchool/ImmanuelSchool/
+https://aluui.github.io/ImmanuelSchool
+
+# to build and deploy, use
+./build.sh
 
 # ImmanuelSchool
 
